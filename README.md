@@ -13,31 +13,26 @@ Ensure you have the following installed on your machine:
 
 Follow these step-by-step commands to clone and set up the local environment:
 
-1. **Navigate to the Project Root**:
-   ```bash
-   cd ops-assistant
-   ```
-
-2. **Create and Activate Virtual Environment**:
+1. **Create and Activate Virtual Environment**:
    Using `uv`, run the following command to bootstrap a virtual environment and lock down the dependencies:
    ```bash
    uv venv
    source .venv/bin/activate
    ```
 
-3. **Install Dependencies**:
+2. **Install Dependencies**:
    Install core and development packages in editable mode:
    ```bash
    uv pip install -e .
    ```
 
-4. **Configure Environment Variables**:
+3. **Configure Environment Variables**:
    Copy the example environment file and configure your local settings:
    ```bash
    cp .env.example .env
    ```
 
-5. **Start local Ollama Model**:
+4. **Start local Ollama Model**:
    Make sure Ollama is running and download the default model:
    ```bash
    ollama run llama3.2
@@ -67,7 +62,7 @@ pytest --cov=server --cov=crew tests/
 Here is a brief overview of the project's layout:
 
 ```
-ops-assistant/
+MultiCrewMCP/ (Project Root)
 ├── .env.example            # Environment variables template
 ├── .gitignore              # Files excluded from git control
 ├── README.md               # Project documentation (this file)
