@@ -94,3 +94,27 @@ def test_save_report() -> None:
     
     # Clean up
     valid_path.unlink()
+
+def test_sliding_window_snippet_selection() -> None:
+    """Verify that search_documents returns the most relevant 200-character snippet containing target keywords (e.g. Zone B)."""
+    res = search_documents("Zone B customer shipping timelines")
+    assert isinstance(res, list)
+    assert len(res) >= 1
+    zone_cov_res = [r for r in res if r["doc_id"] == "zone_coverage"]
+    assert len(zone_cov_res) == 1
+    snippet = zone_cov_res[0]["snippet"]
+    assert "Zone B" in snippet
+    assert "Standard Shipping takes 3 to 4 business days" in snippet
+
+def test_electronics_snippet_selection() -> None:
+    """Verify that search_documents returns the electronics exception snippet for electronics return policy queries."""
+    res = search_documents("What is the return policy for electronics at NovaMart?")
+    assert isinstance(res, list)
+    assert len(res) >= 1
+    ret_pol_res = [r for r in res if r["doc_id"] == "return_policy"]
+    assert len(ret_pol_res) == 1
+    snippet = ret_pol_res[0]["snippet"]
+    assert "electronics must be returned within 14 days" in snippet
+    assert "15% restocking fee" in snippet
+
+
