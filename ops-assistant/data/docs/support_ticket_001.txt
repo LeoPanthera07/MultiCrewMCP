@@ -1,0 +1,14 @@
+NovaMart Customer Support Ticket #001
+Status: Resolved
+Date: May 12, 2026
+Customer: Alice Jenkins (Email: alice.j@gmail.com)
+Assigned Agent: Marcus Vance
+
+Ticket Thread:
+[Customer - May 12, 2026, 09:14 AM]
+Hello, I ordered a NovaMart ActiveWear Fleece Jacket (Size M, SKU: APP-FL-098) last week, but I was sent a cotton t-shirt instead. The package arrived yesterday. I want to exchange this for the correct fleece jacket, but I'm worried it will sell out. Please help!
+
+[Agent - May 12, 2026, 11:30 AM]
+Dear Alice, I am very sorry for the shipping error! I have checked our inventory and can confirm we have 12 units of the ActiveWear Fleece Jacket (Size M) in stock at our Columbus warehouse. I have initiated a no-charge replacement order (Order ID: ORD-095) for you, and it has been upgraded to Overnight Shipping for the inconvenience. 
+
+Additionally, I emailed you a pre-paid return label for the incorrect t-shirt. Please drop it off at any UPS location within 14 days so we can wave the $5.99 return shipping fee.

@@ -1,0 +1,14 @@
+NovaMart Payment & Billing Policy
+
+NovaMart accepts a variety of secure payment methods to offer convenience to our customers.
+
+Accepted Methods:
+- Major Credit & Debit Cards: Visa, Mastercard, American Express, and Discover.
+- Digital Wallets: Apple Pay, Google Pay, and PayPal.
+- Installment Plans: Klarna and Affirm are available for orders exceeding $100.
+
+Billing Details:
+Credit cards are authorized immediately upon checkout but are only officially charged once the package leaves one of our fulfillment warehouses. For orders containing pre-ordered items, authorizations will be refreshed every 7 days until the product ships.
+
+Fraud Prevention & Verification:
+To ensure security, billing and shipping addresses must match for all orders exceeding $500. Additionally, orders above $1,000 require a signature upon delivery. Any suspicious transactions will be automatically flagged by our risk assessment system and placed on a 48-hour administrative hold. During this time, customer support may reach out to verify identity prior to shipment.

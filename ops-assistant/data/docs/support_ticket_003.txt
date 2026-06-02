@@ -1,0 +1,16 @@
+NovaMart Customer Support Ticket #003
+Status: Resolved
+Date: May 25, 2026
+Customer: Clara Oswald (Email: clara.o@yahoo.com)
+Assigned Agent: Danny Pink
+
+Ticket Thread:
+[Customer - May 25, 2026, 10:00 AM]
+Hello, I placed an order for standard shipping on May 20 (Order ID: ORD-018), and the tracking says it was delivered yesterday, May 24. However, I have checked my front porch, mailbox, and spoke with neighbors, but there is no sign of the package! This was a birthday gift for my sister. Can you please locate it or send a replacement?
+
+[Agent - May 25, 2026, 01:10 PM]
+Hi Clara, I am so sorry that your package is missing! I checked the delivery status and can confirm that FedEx marked it as delivered in Zone C (Chicago area) yesterday at 4:30 PM.
+
+Sometimes carriers accidentally mark packages as delivered 24 hours before they actually arrive. However, since this is a time-sensitive gift, I have initiated a replacement order (Order ID: ORD-099) for the same item at no charge. It has been shipped via Overnight Shipping and will arrive tomorrow, May 26.
+
+If the original package does turn up, please keep it as a courtesy for the trouble!

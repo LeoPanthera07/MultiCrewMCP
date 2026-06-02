@@ -1,0 +1,16 @@
+NovaMart Customer Support Ticket #002
+Status: Resolved
+Date: May 18, 2026
+Customer: Bob Miller (Email: bob.m@hotmail.com)
+Assigned Agent: Sarah Connor
+
+Ticket Thread:
+[Customer - May 18, 2026, 02:45 PM]
+Hi, I purchased a NovaMart SmartHome Security Camera (SKU: ELEC-CAM-502) three weeks ago. Yesterday, the camera stopped connecting to my home Wi-Fi network and won't turn on. I tried pressing the reset button, but nothing happens. Since it's within the 30-day window, I would like to get a refund.
+
+[Agent - May 18, 2026, 04:15 PM]
+Hi Bob, I'm sorry to hear that your SmartHome Security Camera has stopped working. I can certainly help you with this return.
+
+Since the camera was purchased 21 days ago, it is well within our 30-day return policy. However, as it is an electronics item, there would normally be a 15% restocking fee if the box has been opened.
+
+Because the device is defective, I have waived the restocking fee. I have generated a free UPS return shipping label for you. Once our Columbus warehouse receives the camera, we will issue a full refund of $129.99 to your credit card.

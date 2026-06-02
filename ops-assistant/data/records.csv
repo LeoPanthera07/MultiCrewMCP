@@ -1,0 +1,21 @@
+id,customer,item,qty,status,date
+ORD-001,John Doe,Wireless Mouse,2,delivered,2026-05-10
+ORD-002,Jane Smith,Mechanical Keyboard,1,shipped,2026-05-12
+ORD-003,Alice Johnson,ActiveWear Fleece Jacket,1,delivered,2026-05-12
+ORD-004,Bob Miller,SmartHome Security Camera,1,returned,2026-05-15
+ORD-005,Charlie Brown,Leather Belt,3,delivered,2026-05-16
+ORD-006,Diana Prince,Organic Cotton T-Shirt,5,delivered,2026-05-18
+ORD-007,Evan Wright,Noise Cancelling Headphones,1,pending,2026-05-20
+ORD-008,Fiona Gallagher,Cashmere Sweater,1,shipped,2026-05-21
+ORD-009,George Costanza,Running Shoes,2,delivered,2026-05-22
+ORD-010,Hannah Abbott,Silk Scarf,1,returned,2026-05-22
+ORD-011,Ian Malcolm,USB-C Hub,3,delivered,2026-05-23
+ORD-012,Julia Roberts,Smart Watch,1,pending,2026-05-24
+ORD-013,Kevin Bacon,Denim Jacket,1,shipped,2026-05-25
+ORD-014,Laura Croft,LED Desk Lamp,2,delivered,2026-05-26
+ORD-015,Michael Scott,Coffee Mug,10,delivered,2026-05-27
+ORD-016,Nancy Drew,Magnifying Glass,1,delivered,2026-05-28
+ORD-017,Oscar Martinez,Ergonomic Office Chair,1,pending,2026-05-29
+ORD-018,Clara Oswald,Bluetooth Speaker,1,delivered,2026-05-20
+ORD-019,Quentin Tarantino,Director Chair,2,shipped,2026-05-31
+ORD-020,Rachel Green,Designer Dress,1,pending,2026-06-01

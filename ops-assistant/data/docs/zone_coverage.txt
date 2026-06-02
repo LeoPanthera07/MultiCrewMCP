@@ -1,0 +1,8 @@
+NovaMart Shipping Zone Coverage & Delivery Speeds
+
+To optimize transit times from our core fulfillment centers (Fulfillment Center East in Columbus, OH and Fulfillment Center West in Reno, NV), NovaMart categorizes the continental United States into four distinct shipping zones:
+
+- Zone A (East Coast & Midwest): Standard Shipping takes 2 to 3 business days. Expedited Shipping takes 1 to 2 business days. Overnight is fully supported for all zip codes. Fulfillment is primarily handled by the Columbus center.
+- Zone B (South & Central): Standard Shipping takes 3 to 4 business days. Expedited Shipping takes 2 business days. Overnight Shipping is supported for metropolitan areas only.
+- Zone C (Mountain & Southwest): Standard Shipping takes 4 to 5 business days. Expedited Shipping takes 2 to 3 business days. Overnight Shipping requires orders to be placed before 11:00 AM EST.
+- Zone D (Pacific Northwest & West Coast): Standard Shipping takes 2 to 3 business days if fulfilled by Reno, NV, otherwise 5 to 7 days if Columbus. Expedited Shipping takes 2 business days. Overnight is supported.

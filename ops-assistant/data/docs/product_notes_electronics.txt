@@ -1,0 +1,8 @@
+NovaMart Electronics - Product & Handling Notes
+
+All NovaMart electronics come with a standard 1-year manufacturer warranty covering parts and labor. Extended warranties are available for purchase within 30 days of the original transaction date.
+
+Crucial handling guidelines apply:
+- Lithium-Ion Batteries: Devices containing lithium-ion batteries (such as tablets, smartphones, and laptops) must be stored at temperatures between 50°F and 70°F. Never expose these items to direct sunlight or ambient temperatures above 110°F during storage or transit.
+- Fragile Screens: LED, OLED, and LCD screens are highly sensitive. All items in the 'Display' subclass must be stored upright in their designated warehouse bays.
+- High-Value Security: Electronics valued over $250 (e.g., smartwatches, VR headsets) are classified under Security Class A. These must be kept in the locked cage in Zone 4, and only personnel with Level 2 security clearance or higher are authorized to pick or pack these orders. Every transfer must be logged using the inventory tracking terminal.

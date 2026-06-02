@@ -1,0 +1,21 @@
+# Environment variables
+.env
+
+# Python caching and bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# Output and traces directories (keeping folder structures via gitkeeps)
+outputs/*.md
+traces/*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db

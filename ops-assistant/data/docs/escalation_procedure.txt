@@ -1,0 +1,15 @@
+NovaMart Support Escalation Procedure
+
+When a NovaMart customer support representative cannot resolve an issue within 15 minutes or when a customer requests management, the ticket must be escalated immediately.
+
+Escalation Tiers:
+- Tier 1 (Support Specialist): Standard tickets, refunds under $100, return label reprints, basic shipping inquiries.
+- Tier 2 (Floor Supervisor): Disputed refunds, refunds between $100 and $500, lost packages, carrier investigation requests, custom shipping arrangements.
+- Tier 3 (Operations Manager): Fraud investigation, billing disputes exceeding $500, legal threats, bulk corporate order overrides, inventory discrepancies.
+
+Response Time SLA:
+- Tier 2 escalations must be responded to within 2 business hours.
+- Tier 3 escalations must be acknowledged within 4 business hours and fully resolved or provided with a detailed action plan within 24 hours.
+
+Documentation Rule:
+Every escalated ticket must have an internal note appended. This note must list: the primary reason for escalation, all troubleshooting steps already taken, and the specific tier requested.
