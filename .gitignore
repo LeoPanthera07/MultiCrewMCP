@@ -15,6 +15,7 @@ ENV/
 # Output and traces directories (keeping folder structures via gitkeeps)
 outputs/*.md
 traces/*.log
+traces/*.jsonl
 
 # OS-specific files
 .DS_Store

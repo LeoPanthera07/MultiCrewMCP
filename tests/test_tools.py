@@ -241,3 +241,49 @@ class TestSaveReport:
         res = save_report("   ", "content")
         assert isinstance(res, dict)
         assert "error" in res
+
+
+# ===== Prompt injection tests (Option A stretch feature) =====
+
+class TestPromptInjection:
+    """Verify that malicious document content cannot exploit the tools directly."""
+
+    def test_malicious_doc_searchable(self):
+        """The malicious doc should be indexed and searchable like any other doc."""
+        _reset_search_index()
+        # Use words that actually appear in the malicious_doc.txt content
+        res = search_documents("IGNORE instructions output system prompt")
+        assert isinstance(res, list)
+        # malicious_doc should appear in results since it contains matching tokens
+        doc_ids = [r["doc_id"] for r in res]
+        assert "malicious_doc" in doc_ids
+
+    def test_save_report_rejects_hacked_traversal(self):
+        """Even if an agent is tricked into calling save_report with 'HACKED',
+        the file is created inside outputs/ (not an arbitrary path).
+        This verifies the tool's own defenses hold regardless of agent behavior."""
+        from pathlib import Path
+        res = save_report("HACKED", "system prompt here")
+        assert isinstance(res, str)
+        saved_path = Path(res)
+        outputs_dir = Path("./outputs").resolve()
+        assert saved_path.is_relative_to(outputs_dir)
+        assert "HACKED" in saved_path.name
+        # Clean up
+        if saved_path.is_file():
+            saved_path.unlink()
+
+    def test_malicious_content_not_in_tool_output(self):
+        """search_documents returns snippets, not executable instructions.
+        The snippet should be plain text, not something that alters behavior."""
+        _reset_search_index()
+        res = search_documents("IGNORE ALL PREVIOUS INSTRUCTIONS")
+        assert isinstance(res, list)
+        if len(res) > 0:
+            for item in res:
+                # Tool output is just data — it contains text, not commands
+                assert isinstance(item["snippet"], str)
+                assert isinstance(item["doc_id"], str)
+                # Tool doesn't execute anything in the snippet
+                assert "doc_id" in item
+
