@@ -8,6 +8,8 @@ from server.utils.validators import require_non_empty_string
 
 # Global cache for the document index
 _INDEX = None
+_INDEX_MTIME = None  # Track docs directory modification time for cache invalidation
+MAX_FILE_SIZE = 1_000_000  # 1MB limit per file to prevent memory exhaustion
 
 def search_documents(query: str) -> list[dict] | dict:
     """Search synthetic documents in the data/docs directory matching the query."""
@@ -25,12 +27,17 @@ def search_documents(query: str) -> list[dict] | dict:
     if not docs_path.is_dir():
         return {"error": "document directory not found"}
 
-    # 2. Build index if not cached
-    global _INDEX
-    if _INDEX is None:
+    # 2. Build index if not cached, or invalidate if docs directory was modified
+    global _INDEX, _INDEX_MTIME
+    current_mtime = docs_path.stat().st_mtime
+    if _INDEX is None or _INDEX_MTIME != current_mtime:
         _INDEX = []
+        _INDEX_MTIME = current_mtime
         for file_path in docs_path.glob("*.txt"):
             try:
+                # Skip files larger than MAX_FILE_SIZE to prevent memory exhaustion
+                if file_path.stat().st_size > MAX_FILE_SIZE:
+                    continue
                 content = file_path.read_text(encoding="utf-8")
                 # Get lowercase alphanumeric tokens for searching
                 tokens = set(re.findall(r"[a-z0-9]+", content.lower()))
