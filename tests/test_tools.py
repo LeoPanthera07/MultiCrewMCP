@@ -287,3 +287,22 @@ class TestPromptInjection:
                 # Tool doesn't execute anything in the snippet
                 assert "doc_id" in item
 
+# ===== Resource tests =====
+
+class TestListDocumentsResource:
+    """Verify that the list_documents resource works as expected."""
+
+    def test_list_documents_success(self):
+        from server.main import list_documents
+        res = list_documents()
+        assert "Available Policy and Support Documents" in res
+        assert "return_policy.txt" in res
+        assert "zone_coverage.txt" in res
+
+    def test_list_documents_missing_dir(self):
+        from server.main import list_documents
+        from unittest import mock
+        with mock.patch.dict(os.environ, {"DATA_DIR": "/nonexistent"}):
+            res = list_documents()
+        assert "No documents directory found" in res
+

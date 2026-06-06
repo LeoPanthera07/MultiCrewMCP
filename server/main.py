@@ -30,5 +30,24 @@ def save_report(title: str, content: str) -> str | dict:
     """Save an operational report to the outputs directory."""
     return save_report_impl(title, content)
 
+@mcp.resource("documents://list")
+def list_documents() -> str:
+    """List all available policy and support documents in the data/docs directory."""
+    import os
+    from pathlib import Path
+    data_dir = os.getenv("DATA_DIR", "./data")
+    docs_path = Path(data_dir) / "docs"
+    if not docs_path.is_dir():
+        return "No documents directory found."
+    files = sorted(docs_path.glob("*.txt"))
+    if not files:
+        return "No documents found."
+    
+    lines = ["Available Policy and Support Documents:"]
+    for f in files:
+        lines.append(f"- {f.name} ({f.stat().st_size} bytes)")
+    return "\n".join(lines)
+
 if __name__ == "__main__":
     mcp.run()
+

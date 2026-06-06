@@ -27,3 +27,7 @@ markers = [
 ]
 testpaths = ["tests"]
 
+[tool.hatch.build.targets.wheel]
+packages = ["crew", "server"]
+
+

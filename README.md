@@ -179,3 +179,11 @@ cat outputs/run_report_*.md
   traces/*.jsonl    (structured JSON traces)
   outputs/run_report_*.md  (observability reports)
 ```
+
+## Demo Video
+
+The 5-minute video demonstration of the project:
+- **Video Link**: [Watch the Demo Video](https://youtu.be/XXXXXXXXXXX) *(unlisted)*
+
+*(You can replace this placeholder link with your recorded unlisted YouTube link).*
+
