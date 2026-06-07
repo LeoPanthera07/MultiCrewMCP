@@ -182,8 +182,14 @@ cat outputs/run_report_*.md
 
 ## Demo Video
 
-The 5-minute video demonstration of the project:
-- **Video Link**: [Watch the Demo Video](https://youtu.be/XXXXXXXXXXX) *(unlisted)*
+Click the preview below to watch the video demonstration:
 
-*(You can replace this placeholder link with your recorded unlisted YouTube link).*
+<div align="center">
+  <a href="https://www.loom.com/share/8ab9deb156234e52b85921e5de36a556">
+    <img src="https://cdn.loom.com/sessions/thumbnails/8ab9deb156234e52b85921e5de36a556-bcf34ebef3e930c9-full-play.gif" alt="Watch the Demo Video" style="width: 100%; max-width: 600px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  </a>
+</div>
+
+If the preview does not load, you can watch it directly here: [Watch the Demo Video on Loom](https://www.loom.com/share/8ab9deb156234e52b85921e5de36a556).
+
 
