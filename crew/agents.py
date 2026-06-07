@@ -10,7 +10,7 @@ def build_researcher(tools: list) -> Agent:
     """Operations Researcher: retrieves evidence from docs and records.
     Never states facts without citing source. max_iter from env MAX_ITER_RESEARCHER."""
     model_name = os.getenv("OLLAMA_MODEL", "llama3.2")
-    base_url = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
+    base_url = os.getenv("OLLAMA_BASE_URL", "http://127.0.0.1:11434")
     
     # Initialize the LLM pointing to our local Ollama server with temperature=0.0
     llm = LLM(model=f"ollama/{model_name}", base_url=base_url, temperature=0.0)
@@ -41,7 +41,7 @@ def build_writer(tools: list) -> Agent:
     Every factual claim names its source. States clearly if evidence is missing.
     Calls save_report to save the output. max_iter from env MAX_ITER_WRITER."""
     model_name = os.getenv("OLLAMA_MODEL", "llama3.2")
-    base_url = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
+    base_url = os.getenv("OLLAMA_BASE_URL", "http://127.0.0.1:11434")
     
     # Initialize the LLM pointing to our local Ollama server with temperature=0.0
     llm = LLM(model=f"ollama/{model_name}", base_url=base_url, temperature=0.0)
